@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Decodificador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="assets/logo-alura.png" alt="logo alura" class="logoAlura">
+    </header>
+    <main>
+        <section class="conteudo">
+            <div class="conteudo_entrada">
+                <textarea id="textoEntrada" oninput="arrumaLetras(this)" placeholder="Digite aqui seu texto"
+                    class="textoInput" cols="40" rows="15"></textarea>
+                <p>São aceitos somente textos sem acentos e em letras minúsculas</p>
+                <div class="botoesCodifica">
+                    <button onclick="codificaTexto()">Codificar</button>
+                    <button onclick="decodificaTexto()">Decodificar</button>
+                </div>
+            </div>
+            <div class="resultado" id="resultado">
+                <div id="imagemResposta" class="divSemMensagem">
+                    <img src="assets/nenhuma-mensagem.jpg" alt="personagem com uma lupa procurando algo"
+                        id="imagemResposta">
+                    <h3>Não encontramos nada...</h3>
+                    <p>Nenhuma mensagem foi enviada para ser codificada ou descodificada</p>
+                </div>
+                <p id="textoResposta"></p>
+                <div class="botoesResposta">
+                    <p id="botaoCopia"></p>
+                    <p id="botaoReseta"></p>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Lucas</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
