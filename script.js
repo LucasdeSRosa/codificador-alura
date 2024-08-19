@@ -87,24 +87,24 @@ function decodificaTexto() {
 	novoTexto.textContent = textoModificado;
 	novoTexto.setAttribute("id", "textoResposta");
 
-	let seila2 = document.getElementById("textoResposta");
-	seila2.parentNode.replaceChild(novoTexto, seila2);
+	let trocaTextoResposta = document.getElementById("textoResposta");
+	trocaTextoResposta.parentNode.replaceChild(novoTexto, trocaTextoResposta);
 
 	var novoBotao = document.createElement("button");
 	novoBotao.textContent = "Copiar Texto";
 	novoBotao.setAttribute("onclick", "copiarTexto()");
 	novoBotao.setAttribute("id", "botaoCopia");
 
-	let seila = document.getElementById("botaoCopia");
-	seila.parentNode.replaceChild(novoBotao, seila);
+	let insereBotaoCopia = document.getElementById("botaoCopia");
+	insereBotaoCopia.parentNode.replaceChild(novoBotao, insereBotaoCopia);
 
 	var novoBotao1 = document.createElement("button");
 	novoBotao1.textContent = "Limpar";
 	novoBotao1.setAttribute("onclick", "resetar()");
 	novoBotao1.setAttribute("id", "botaoReseta");
 
-	let seila3 = document.getElementById("botaoReseta");
-	seila3.parentNode.replaceChild(novoBotao1, seila3);
+	let insereBotaoReseta = document.getElementById("botaoReseta");
+	insereBotaoReseta.parentNode.replaceChild(novoBotao1, insereBotaoReseta);
 
 
 	document.getElementById("imagemResposta").style.display = "none";

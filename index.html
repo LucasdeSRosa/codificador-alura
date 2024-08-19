@@ -10,19 +10,19 @@
 </head>
 
 <body>
-    <header>
-        <img src="assets/logo-alura.png" alt="logo alura" class="logoAlura">
-    </header>
     <main>
+        <img src="assets/logo-alura.png" alt="logo alura" class="logoAlura">
         <section class="conteudo">
             <div class="conteudo_entrada">
                 <textarea id="textoEntrada" oninput="arrumaLetras(this)" placeholder="Digite aqui seu texto"
-                    class="textoInput" cols="40" rows="15"></textarea>
-                <p>São aceitos somente textos sem acentos e em letras minúsculas</p>
-                <div class="botoesCodifica">
-                    <button onclick="codificaTexto()">Codificar</button>
-                    <button onclick="decodificaTexto()">Decodificar</button>
-                </div>
+                    class="textoInput" cols="40" rows="12"></textarea>
+                <div class="conteudo_entrada_botoes">
+                    <p>São aceitos somente textos sem acentos e em letras minúsculas</p>
+                    <div class="botoesCodifica">
+                        <button onclick="codificaTexto()">Codificar</button>
+                        <button onclick="decodificaTexto()">Decodificar</button>
+                    </div>
+                </div>  
             </div>
             <div class="resultado" id="resultado">
                 <div id="imagemResposta" class="divSemMensagem">

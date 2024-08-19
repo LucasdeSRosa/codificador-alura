@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-    --cor--primaria: #ADD8E6;
+    --cor--primaria: #F3F5FC;
     --cor--secundaria: #0a3871;
     --cor--terciaria: #22d4fd;
     --cor--hover: #272727;
@@ -31,11 +31,14 @@ body {
     display: flex;
     gap: 50px;
     justify-content: center;
+    padding-top: 1%;
+    
 }
 
 .conteudo_entrada {
     display: flex;
     flex-direction: column;
+    justify-content:space-between;
 }
 
 #textoEntrada {
@@ -46,7 +49,7 @@ body {
     font-weight: 400;
     font-size: 32px;
     padding-top: 6px;
-    resize: none;
+
 
 }
 
@@ -64,6 +67,12 @@ body {
     box-shadow: none;
 }
 
+.conteudo_entrada_botoes{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+
 .botoesCodifica {
     display: flex;
     justify-content: center;
@@ -75,18 +84,17 @@ button {
     border: groove 1px;
     padding: 10px;
     border-radius: 20px;
-    background-color: #ADD8E6;
-    color: var(--cor--secundaria);
+    background-color: var(--cor--secundaria);
+    color: var(--cor--primaria);
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 20px;
     margin-top: 15px;
-    width: 40%
+    width: 40%;
 }
 
 .resultado {
     border-radius: 32px;
-    border-color: #0a3871;
     padding: 20px 20px 20px 20px;
     background-color: #ffffff;
     max-width: 400px;
@@ -94,6 +102,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    box-shadow: 0px 0px 15px  grey;
 }
 
 .divSemMensagem {
@@ -111,7 +120,7 @@ button {
     font-weight: 400;
     font-size: 32px;
     height: 100%;
-    max-height: 500px;
+    max-height: 30rem;
     text-overflow: ellipsis;
     overflow: scroll;
     word-break: break-all;
@@ -127,7 +136,7 @@ button {
 footer {
     display: flex;
     justify-content: center;
-    position: absolute;
-    bottom: 10px;
+    padding-bottom: 1%;
     width: 100%;
+    padding-top: 5%;
 }
